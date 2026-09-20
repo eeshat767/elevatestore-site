@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Checkout | elevate store</title>
+    <meta name="description" content="Secure checkout for elevate store." />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand-mark" href="index.html"><span>elevate store</span></a>
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="products.html">Shop</a>
+          <a href="men.html">Men</a>
+          <a href="women.html">Women</a>
+          <a href="new-arrivals.html">New Arrivals</a>
+          <a href="collections.html">Collections</a>
+        </nav>
+        <div class="header-actions">
+          <button class="icon-button mobile-hidden" data-search-open aria-label="Search products"><span>⌕</span></button>
+          <a class="icon-button mobile-hidden" href="account.html" aria-label="Account"><span>◌</span></a>
+          <a class="icon-button mobile-hidden" href="wishlist.html" aria-label="Wishlist"><span>♥</span><span class="count-bubble wishlist-count">0</span></a>
+          <a class="icon-button" href="cart.html" aria-label="Cart"><span>👜</span><span class="count-bubble cart-count">0</span></a>
+          <button class="icon-button desktop-hidden menu-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+        </div>
+      </div>
+    </header>
+
+    <main class="container section-tight">
+      <section class="page-hero">
+        <div class="page-hero-inner">
+          <span class="eyebrow">Secure checkout</span>
+          <h1>Complete your order.</h1>
+        </div>
+      </section>
+
+      <div class="checkout-layout">
+        <form id="checkout-form" class="form-card">
+          <h3>Delivery details</h3>
+          <div class="form-grid">
+            <div class="form-field"><label>First name</label><input type="text" value="Ada" /></div>
+            <div class="form-field"><label>Last name</label><input type="text" value="Okafor" /></div>
+            <div class="form-field full"><label>Email</label><input type="email" value="ada@example.com" /></div>
+            <div class="form-field full"><label>Address</label><input type="text" value="No. 12 Makurdi Road" /></div>
+            <div class="form-field"><label>City</label><input type="text" value="Makurdi" /></div>
+            <div class="form-field"><label>State</label><input type="text" value="Benue" /></div>
+            <div class="form-field full"><label>Payment method</label><select><option>Card payment</option><option>Bank transfer</option><option>PayPal</option></select></div>
+          </div>
+          <button class="btn btn-primary" type="submit" style="margin-top:18px;">Place order</button>
+        </form>
+
+        <aside class="summary-box">
+          <h3>Order summary</h3>
+          <div class="summary-row"><span>Subtotal</span><strong>₦2,800</strong></div>
+          <div class="summary-row"><span>Shipping</span><strong>Free</strong></div>
+          <div class="summary-row"><span>Estimated tax</span><strong>₦140</strong></div>
+          <div class="summary-row total"><span>Total</span><strong>₦2,940</strong></div>
+        </aside>
+      </div>
+    </main>
+
+    <footer class="site-footer"><div class="container footer-bottom"><div class="footer-copy">© 2026 elevate store</div></div></footer>
+    <script src="scripts.js"></script>
+  </body>
+</html>

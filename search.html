@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Search | elevate store</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand-mark" href="index.html"><span>elevate store</span></a>
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="products.html">Shop</a>
+          <a href="men.html">Men</a>
+          <a href="women.html">Women</a>
+          <a href="new-arrivals.html">New Arrivals</a>
+          <a href="collections.html">Collections</a>
+        </nav>
+        <div class="header-actions">
+          <button class="icon-button mobile-hidden" data-search-open aria-label="Search products"><span>⌕</span></button>
+          <a class="icon-button mobile-hidden" href="account.html" aria-label="Account"><span>◌</span></a>
+          <a class="icon-button mobile-hidden" href="wishlist.html" aria-label="Wishlist"><span>♥</span><span class="count-bubble wishlist-count">0</span></a>
+          <a class="icon-button" href="cart.html" aria-label="Cart"><span>👜</span><span class="count-bubble cart-count">0</span></a>
+          <button class="icon-button desktop-hidden menu-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+        </div>
+      </div>
+    </header>
+
+    <main class="container section-tight search-layout">
+      <section class="page-hero">
+        <div class="page-hero-inner">
+          <span class="eyebrow">Search</span>
+          <h1>Find your next pair.</h1>
+        </div>
+      </section>
+
+      <div class="search-input-wrap">
+        <form id="search-form" style="display:flex; width:100%; gap:12px; align-items:center;">
+          <input id="search-input" type="search" placeholder="Search by product, collection or category" aria-label="Search products" />
+          <button class="btn btn-primary" type="submit">Search</button>
+        </form>
+      </div>
+
+      <div class="search-suggestions">
+        <button class="chip" type="button">Sneakers</button>
+        <button class="chip" type="button">Formal</button>
+        <button class="chip" type="button">Women</button>
+        <button class="chip" type="button">New arrivals</button>
+      </div>
+
+      <div id="search-results" class="product-grid"></div>
+    </main>
+
+    <footer class="site-footer"><div class="container footer-bottom"><div class="footer-copy">© 2026 elevate store</div></div></footer>
+    <script src="scripts.js"></script>
+  </body>
+</html>

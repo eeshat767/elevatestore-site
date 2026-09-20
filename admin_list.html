@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Admin - Products</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header"><div class="container header-row"><a class="brand" href="index.html">elevatestore</a><nav class="main-nav"><a href="products.html">Products</a><a href="admin.html">Create</a></nav></div></header>
+  <main class="container">
+    <h1>Manage Products</h1>
+    <div id="list"></div>
+  </main>
+  <script>
+  async function load(){
+    const res = await fetch('/api/products');
+    const data = await res.json();
+    const c = document.getElementById('list');
+    c.innerHTML = '';
+    data.forEach(p=>{
+      const el = document.createElement('div'); el.className='admin-row';
+      el.innerHTML = `<strong>${p.name}</strong> <small>${p.sku || p.id}</small> <a href="admin_edit.html?id=${encodeURIComponent(p.id)}">Edit</a>`;
+      c.appendChild(el);
+    });
+  }
+  load();
+  </script>
+</body>
+</html>

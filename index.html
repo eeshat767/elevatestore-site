@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>elevate store | Premium footwear</title>
+    <meta name="description" content="Premium shoes for men and women designed for modern movement." />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand-mark" href="index.html"><span>elevate store</span></a>
+        <nav class="main-nav" aria-label="Main navigation">
+          <a class="active" href="index.html">Home</a>
+          <a href="products.html">Shop</a>
+          <a href="men.html">Men</a>
+          <a href="women.html">Women</a>
+          <a href="new-arrivals.html">New Arrivals</a>
+          <a href="collections.html">Collections</a>
+        </nav>
+        <div class="header-actions">
+          <button class="icon-button mobile-hidden" data-search-open aria-label="Search products"><span>⌕</span></button>
+          <a class="icon-button mobile-hidden" href="account.html" aria-label="Account"><span>◌</span></a>
+          <a class="icon-button mobile-hidden" href="wishlist.html" aria-label="Wishlist"><span>♥</span><span class="count-bubble wishlist-count">0</span></a>
+          <a class="icon-button" href="cart.html" aria-label="Cart"><span>👜</span><span class="count-bubble cart-count">0</span></a>
+          <button class="icon-button desktop-hidden menu-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero-shell">
+        <div class="container hero">
+          <div class="hero-copy">
+            <span class="eyebrow-lg">New season / modern movement</span>
+            <h1>Step into your next era.</h1>
+            <p>Contemporary footwear designed for movement, confidence and everyday expression. Crafted for the pace of modern life.</p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="men.html">Shop men</a>
+              <a class="btn btn-secondary" href="women.html">Shop women</a>
+            </div>
+            <div class="hero-metrics">
+              <div class="stat">
+                <strong>12k+</strong>
+                <span>happy wearers</span>
+              </div>
+              <div class="stat">
+                <strong>4.9</strong>
+                <span>average rating</span>
+              </div>
+              <div class="stat">
+                <strong>48h</strong>
+                <span>dispatch</span>
+              </div>
+            </div>
+          </div>
+          <div class="hero-visual">
+            <div class="hero-photo">
+              <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=900&q=80" alt="Premium sneakers lifestyle" />
+            </div>
+            <div class="hero-card">
+              <small>Featured pair</small>
+              <strong>Aero Runner</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section container">
+        <div class="section-header">
+          <div>
+            <span class="eyebrow">Curated categories</span>
+            <h2>Find your fit.</h2>
+          </div>
+          <p>Premium silhouettes for everyday wear, elevated essentials and high-performance movement.</p>
+        </div>
+        <div class="category-grid">
+          <article class="category-card">
+            <img src="https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?auto=format&fit=crop&w=900&q=80" alt="Men collection" loading="lazy" />
+            <div class="overlay"><h3>Men</h3></div>
+          </article>
+          <article class="category-card">
+            <img src="https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=900&q=80" alt="Women collection" loading="lazy" />
+            <div class="overlay"><h3>Women</h3></div>
+          </article>
+          <article class="category-card">
+            <img src="https://images.unsplash.com/photo-1543508282-6319a3e2621f?auto=format&fit=crop&w=900&q=80" alt="Sneakers collection" loading="lazy" />
+            <div class="overlay"><h3>Sneakers</h3></div>
+          </article>
+          <article class="category-card">
+            <img src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?auto=format&fit=crop&w=900&q=80" alt="Formal shoes" loading="lazy" />
+            <div class="overlay"><h3>Formal</h3></div>
+          </article>
+          <article class="category-card">
+            <img src="https://images.unsplash.com/photo-1608231387042-66d1773070a5?auto=format&fit=crop&w=900&q=80" alt="Casual shoes" loading="lazy" />
+            <div class="overlay"><h3>Casual</h3></div>
+          </article>
+          <article class="category-card">
+            <img src="https://images.unsplash.com/photo-1600269452121-4f2416e55c28?auto=format&fit=crop&w=900&q=80" alt="New arrivals" loading="lazy" />
+            <div class="overlay"><h3>New arrivals</h3></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section container">
+        <div class="section-header">
+          <div>
+            <span class="eyebrow">Best sellers</span>
+            <h2>Signature essentials.</h2>
+          </div>
+          <a class="btn btn-secondary" href="products.html">View all</a>
+        </div>
+        <div id="best-sellers-grid" class="product-grid"></div>
+      </section>
+
+      <section class="section container">
+        <div class="editorial-split">
+          <div class="editorial-visual">
+            <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=1200&q=80" alt="Editorial footwear lifestyle" loading="lazy" />
+          </div>
+          <div class="editorial-copy">
+            <span class="eyebrow">Our story</span>
+            <h2>Made to move with you.</h2>
+            <p>Designed around modern movement, our footwear combines refined materials with everyday comfort. Every silhouette is crafted to feel elevated from the first step to the last.</p>
+            <a class="btn btn-primary" href="about.html">Discover our story</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section container">
+        <div class="section-header">
+          <div>
+            <span class="eyebrow">New arrivals</span>
+            <h2>Fresh this week.</h2>
+          </div>
+          <a class="btn btn-secondary" href="new-arrivals.html">View all new arrivals</a>
+        </div>
+        <div id="new-arrivals-grid" class="product-grid"></div>
+      </section>
+
+      <section class="section container">
+        <div class="collection-promo">
+          <img src="https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?auto=format&fit=crop&w=1500&q=80" alt="Autumn collection campaign" loading="lazy" />
+          <div class="collection-content">
+            <span class="eyebrow" style="color:#f7d899;">Autumn edit</span>
+            <h3>The Autumn Edit</h3>
+            <p>Refined silhouettes. Everyday confidence. A wardrobe for the season ahead.</p>
+            <a class="btn btn-secondary" href="collections.html">Explore collection</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section container">
+        <div class="section-header">
+          <div>
+            <span class="eyebrow">Why choose us</span>
+            <h2>Thoughtful from start to finish.</h2>
+          </div>
+        </div>
+        <div class="benefit-grid">
+          <article class="benefit-card">
+            <div class="benefit-icon">✦</div>
+            <h3>Free shipping</h3>
+            <p>On qualifying orders over ₦70,000.</p>
+          </article>
+          <article class="benefit-card">
+            <div class="benefit-icon">↺</div>
+            <h3>Easy returns</h3>
+            <p>Simple 30-day returns on eligible styles.</p>
+          </article>
+          <article class="benefit-card">
+            <div class="benefit-icon">✓</div>
+            <h3>Secure payment</h3>
+            <p>Protected checkout and trusted payment options.</p>
+          </article>
+          <article class="benefit-card">
+            <div class="benefit-icon">✧</div>
+            <h3>Quality guarantee</h3>
+            <p>Built with premium materials for lasting wear.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section container">
+        <div class="section-header">
+          <div>
+            <span class="eyebrow">Customer reviews</span>
+            <h2>What they’re saying.</h2>
+          </div>
+        </div>
+        <div class="review-grid">
+          <article class="review-card">
+            <div class="star-row">★★★★★</div>
+            <p>“The fit is incredible and the finish feels premium. They look as good as they feel.”</p>
+            <div class="review-author"><div><strong>Amara A.</strong><span>Aero Runner</span></div></div>
+          </article>
+          <article class="review-card">
+            <div class="star-row">★★★★★</div>
+            <p>“I wanted something polished but effortless. These are exactly that.”</p>
+            <div class="review-author"><div><strong>Joseph K.</strong><span>Verona Oxford</span></div></div>
+          </article>
+          <article class="review-card">
+            <div class="star-row">★★★★★</div>
+            <p>“From the box to the first walk, the quality is obvious. Everyday comfort without compromise.”</p>
+            <div class="review-author"><div><strong>Ruth O.</strong><span>Nova Ballet</span></div></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section container">
+        <div class="section-header">
+          <div>
+            <span class="eyebrow">Follow our journey</span>
+            <h2>@elevatestore</h2>
+          </div>
+        </div>
+        <div class="instagram-grid">
+          <div class="instagram-item"><img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=700&q=80" alt="Sneakers in fashion" loading="lazy" /></div>
+          <div class="instagram-item"><img src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?auto=format&fit=crop&w=700&q=80" alt="Sneakers close-up" loading="lazy" /></div>
+          <div class="instagram-item"><img src="https://images.unsplash.com/photo-1600269452121-4f2416e55c28?auto=format&fit=crop&w=700&q=80" alt="Urban footwear styling" loading="lazy" /></div>
+          <div class="instagram-item"><img src="https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?auto=format&fit=crop&w=700&q=80" alt="Classic shoe pair" loading="lazy" /></div>
+          <div class="instagram-item"><img src="https://images.unsplash.com/photo-1543508282-6319a3e2621f?auto=format&fit=crop&w=700&q=80" alt="Streetwear style" loading="lazy" /></div>
+          <div class="instagram-item"><img src="https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=700&q=80" alt="Fashion footwear" loading="lazy" /></div>
+        </div>
+      </section>
+
+      <section class="section container">
+        <div class="newsletter">
+          <div>
+            <span class="eyebrow" style="color:#c6a15b;">The good stuff</span>
+            <h3>The good stuff, delivered.</h3>
+            <p>Get first access to new drops, exclusive collections and special offers.</p>
+          </div>
+          <form class="newsletter-form" action="#">
+            <label class="sr-only" for="newsletter-email">Email address</label>
+            <input id="newsletter-email" type="email" placeholder="Email address" />
+            <button class="btn btn-primary" type="submit">Subscribe</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <a class="brand-mark" href="index.html"><span>elevate store</span></a>
+          <p>Premium footwear for everyday movement, elevated comfort and modern confidence.</p>
+        </div>
+        <div class="footer-column">
+          <h4>Shop</h4>
+          <nav>
+            <a href="men.html">Men</a>
+            <a href="women.html">Women</a>
+            <a href="products.html">Sneakers</a>
+            <a href="products.html">Formal</a>
+            <a href="new-arrivals.html">New arrivals</a>
+          </nav>
+        </div>
+        <div class="footer-column">
+          <h4>Help</h4>
+          <nav>
+            <a href="contact.html">Contact</a>
+            <a href="faq.html">FAQ</a>
+            <a href="shipping.html">Shipping</a>
+            <a href="shipping.html">Returns</a>
+            <a href="products.html">Size guide</a>
+          </nav>
+        </div>
+        <div class="footer-column">
+          <h4>Company</h4>
+          <nav>
+            <a href="about.html">About</a>
+            <a href="about.html">Our story</a>
+            <a href="contact.html">Careers</a>
+          </nav>
+        </div>
+        <div class="footer-column">
+          <h4>Legal</h4>
+          <nav>
+            <a href="privacy.html">Privacy policy</a>
+            <a href="terms.html">Terms & conditions</a>
+          </nav>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <div class="footer-copy">© 2026 elevate store</div>
+        <div class="payment-row">
+          <span class="payment-chip">Visa</span>
+          <span class="payment-chip">Mastercard</span>
+          <span class="payment-chip">PayPal</span>
+        </div>
+      </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>
