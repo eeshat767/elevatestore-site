@@ -1882,6 +1882,37 @@ body.is-ready .hero-metrics { animation-delay: 0.32s; }
   .site-footer { padding: 28px 0 18px; }
   .footer-grid { grid-template-columns: 1fr; gap: 18px; }
 
+  /* Ensure card-based sections stack into a single convenient column */
+  .category-grid,
+  .product-grid,
+  .product-grid-compact,
+  .review-grid,
+  .instagram-grid,
+  .benefit-grid,
+  .collection-grid,
+  .stats-grid,
+  .info-grid,
+  .footer-grid,
+  .blog-grid,
+  .account-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Stack action buttons and card controls */
+  .hero-actions { flex-direction: column; align-items: stretch; }
+  .hero-metrics { flex-direction: column; }
+  .product-actions { flex-direction: column; align-items: stretch; }
+  .product-actions .btn { width: 100%; }
+  .product-actions .quick-link { width: auto; }
+
+  /* Make filter and side panels full width */
+  .catalog-wrap { grid-template-columns: 1fr; }
+  .filter-panel { position: relative; width: 100%; }
+
+  /* Reduce spacing for compact stacks */
+  .section { padding: 36px 0; }
+  .section-tight { padding: 28px 0; }
+
   /* Reduce heavy visual effects for small screens */
   .hero-visual .hero-photo { border-radius: 18px 18px 18px 48px; height: auto; }
   .page-loader__brand span { font-size: 1.6rem; }
